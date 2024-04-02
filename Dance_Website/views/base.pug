@@ -1,0 +1,25 @@
+
+doctype html
+
+html
+    head
+        title Dance Academy
+        block scripts 
+        block style
+            style
+                include ../static/style.css
+    body
+        nav#navbar
+            div#logo
+                img(src="/static/logo.png")
+                p DA
+            ul
+                li #[a(href="/home") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/contact") Contact Us]
+
+        block content
+        block footer
+            

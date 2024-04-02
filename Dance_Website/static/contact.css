@@ -1,0 +1,36 @@
+.myForm {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 50px auto;
+}
+
+.myForm input[type="text"],
+.myForm input[type="phone"],
+.myForm input[type="email"] {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.myForm button {
+    padding: 15px 20px;
+    background-color: rgb(255, 63, 63);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.myForm button:hover {
+    background-color: red;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+}

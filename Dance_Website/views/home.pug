@@ -1,0 +1,52 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style 
+    style
+        include ../static/style.css
+
+block content 
+    section#introSection
+        div Welcome to Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/missions/1.jpeg")
+            div.card-content
+                p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/missions/2.jpeg")
+            div.card-content
+                p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/missions/3.jpeg")
+
+            div.card-content
+                p This is the best dance academy of the universe
+        
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsorsPic
+            img(src= "/static/sponsors/ms.png", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/sponsors/google.png", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/sponsors/amazon.png", alt= "Sponsor Image", class= "spImage")
+            img(src= "/static/sponsors/pepsi.png", alt= "Sponsor Image", class= "spImage")
+
+block footer 
+    footer#footer
+        p Copyright © 2019 HarryAcademy.com | All Rights Reserved

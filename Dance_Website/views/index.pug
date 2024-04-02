@@ -1,0 +1,63 @@
+doctype html
+html
+    head
+        title Dance Academy
+        style
+            include ../static/style.css
+
+    body
+        nav#navbar
+            div#logo
+                img(src="/static/logo.png")
+                p DA
+            ul
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+
+        section#introSection
+            div Welcome to Dance Academy
+            div.small Eat Sleep Dance Repeat
+
+        section#missionSection
+            h2 Our Mission
+            div.card
+                h3 Dance Perfection
+                div.card-box
+                    div.card-img
+                        img(src="/static/missions/1.jpeg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+            div.card
+                h3 Dance the way you like
+                div.card-box
+                    div.card-img
+                        img(src="/static/missions/2.jpeg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+            div.card
+                h3 Expert Teaching
+                div.card-box
+                    div.card-img
+                        img(src="/static/missions/3.jpeg")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+        
+        section#sponsorsSection
+            h2 Our Sponsors
+            div#sponsorsPic
+                img(src= "/static/sponsors/ms.png", alt= "Sponsor Image", class= "spImage")
+                img(src= "/static/sponsors/google.png", alt= "Sponsor Image", class= "spImage")
+                img(src= "/static/sponsors/amazon.png", alt= "Sponsor Image", class= "spImage")
+                img(src= "/static/sponsors/pepsi.png", alt= "Sponsor Image", class= "spImage")
+
+        footer#footer
+            p Copyright © 2019 HarryAcademy.com | All Rights Reserved
+
+        script
+            include ../static/index.js
